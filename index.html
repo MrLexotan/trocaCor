@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Switch Color</title>
+</head>
+
+<script>
+
+  function mudarCor() {
+  document.getElementById("trocar").style.backgroundColor = cores[Math.floor(Math.random() * cores.length)];
+  document.getElementById("btn").style.borderColor = cores[Math.floor(Math.random() * cores.length)];
+}
+
+let cores = ["#fec63e", "#76b5c5", "#154c79", "#00008B","#008080", "#00FF7F",
+ "#9ACD32", "#BC8F8F", "#DC143C", "#E0FFFF" ]
+
+console.log()
+
+</script>
+
+<body>
+
+  <div id="trocar">
+
+  </div>
+  <audio src=""></audio>
+  <button class="btn" id="btn" onclick="mudarCor()">Troque de Cor</button>
+
+</body>
+</html>
